@@ -2,7 +2,7 @@
 const jwt = require('jsonwebtoken');
 const userRepository = require('../repositories/userRepository');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
+const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-change-me';
 const JWT_EXPIRES_IN = '24h';
 
 /**

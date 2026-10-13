@@ -2,8 +2,7 @@
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
-// Database path (ใช้ database เดิม)
-const dbPath = path.join(__dirname, '../../database/sqlite/wallboard.db');
+const { dbPath } = require('../config/dbPath');
 
 /**
  * User Repository - Data Access Layer

@@ -12,3 +12,12 @@ INSERT OR IGNORE INTO agents (agent_code, full_name, role, team_id, status) VALU
   ('SV001','Sara V','Supervisor',1,'Active'),
   ('AG010','John Blue','Agent',2,'Inactive'),
   ('AD001','Admin One','Admin',3,'Active');
+
+-- Login accounts for the admin panel (Task 1: User Management)
+INSERT OR IGNORE INTO users (username, fullName, role, teamId, status) VALUES
+  ('AD001','Admin One','Admin',3,'Active'),
+  ('AD002','Admin Two','Admin',3,'Active'),
+  ('SV001','Sara V','Supervisor',1,'Active'),
+  ('AG001','Alice Green','Agent',1,'Active'),
+  ('AG002','Bob Brown','Agent',1,'Active'),
+  ('AG010','John Blue','Agent',2,'Inactive');

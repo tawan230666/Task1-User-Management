@@ -15,6 +15,7 @@ const { initSQLite, connectMongoDB } = require('./config/database');
 const authRoutes = require('./routes/auth');
 const agentRoutes = require('./routes/agents');
 const messageRoutes = require('./routes/messages');
+const userRoutes = require('./routes/users');
 
 // ---- Socket handler & error middleware ----
 const socketHandler = require('./socket/socketHandler');
@@ -68,6 +69,7 @@ app.use((req, _res, next) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/agents', agentRoutes);
 app.use('/api/messages', messageRoutes);
+app.use('/api/users', userRoutes);
 
 // ---------- Health check ----------
 app.get('/health', (_req, res) => {
